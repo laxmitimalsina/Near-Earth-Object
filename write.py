@@ -21,7 +21,7 @@ def write_to_csv(results, filename):
         "diameter_km",
         "potentially_hazardous",
     )
-    # TODO: Write the results to a CSV file, following the specification in the instructions.
+
     with open(filename, "w") as outfile:
         csvfile = csv.DictWriter(outfile, fieldnames=fieldnames)
         csvfile.writeheader()
